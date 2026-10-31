@@ -1,6 +1,6 @@
 {
   "name": "@neuroline/integrations",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Provider integrations and OAuth helpers for AI agents.",
   "license": "Apache-2.0",
   "repository": {

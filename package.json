@@ -11,8 +11,9 @@
     "url": "https://github.com/neuroline-ai/integrations/issues"
   },
   "type": "module",
+  "packageManager": "pnpm@10.34.5",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "files": [
     "dist",
@@ -33,12 +34,14 @@
     "prepack": "npm run build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "ci:publish": "changeset publish"
   },
   "dependencies": {
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.1",
     "@eslint/js": "^9.39.5",
     "@types/node": "^24.13.3",
     "eslint": "^9.39.5",

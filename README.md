@@ -1,6 +1,6 @@
 # @neuroline/integrations
 
-Provider actions and OAuth helpers for AI agents. Node.js 22+, ESM.
+Provider actions and OAuth helpers for AI agents. Node.js 24+, ESM.
 To add an integration to this package, define a provider and its functions (actions).
 
 `src/providers/example/_provider.ts`:
@@ -51,9 +51,9 @@ export default defineAction(provider, {
 });
 ```
 
-Add `_icon.svg` beside these files. From this package directory, run `npm run build`;
+Add `_icon.svg` beside these files. From this package directory, run `pnpm build`;
 the build discovers and registers `example.get_item` automatically.
 Prefix helper files with `_` so they are not treated as actions. Add tests beside
-each action and run `npm test` after building.
+each action.
 
 Code: [Apache-2.0](LICENSE). Provider logos are excluded.

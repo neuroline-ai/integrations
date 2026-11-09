@@ -82,6 +82,7 @@ ${providers.map(({ provider }, index) => `  ${provider}: provider${index},`).joi
 
 export type IntegrationActionId = keyof typeof registry;
 export type IntegrationProviderId = keyof typeof providerRegistry;
+export const integrationProviderIds = Object.keys(providerRegistry) as IntegrationProviderId[];
 
 export const {
   getIntegrationAuth,

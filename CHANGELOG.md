@@ -1,5 +1,11 @@
 # @neuroline/integrations
 
+## 0.3.0
+
+### Minor Changes
+
+- c5622bf: export list of provider IDs
+
 ## 0.2.0
 
 ### Minor Changes

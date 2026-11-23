@@ -80,6 +80,10 @@ const providerRegistry = {
 ${providers.map(({ provider }, index) => `  ${provider}: provider${index},`).join("\n")}
 } as const;
 
+export const providerConfigs = {
+${providers.map(({ provider }, index) => `  ${provider}: provider${index}.config,`).join("\n")}
+} as const;
+
 export type IntegrationActionId = keyof typeof registry;
 export type IntegrationProviderId = keyof typeof providerRegistry;
 export const integrationProviderIds = Object.keys(providerRegistry) as IntegrationProviderId[];

@@ -1,5 +1,11 @@
 # @neuroline/integrations
 
+## 0.4.0
+
+### Minor Changes
+
+- 511f75b: expose configurations
+
 ## 0.3.0
 
 ### Minor Changes
